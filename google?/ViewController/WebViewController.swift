@@ -48,6 +48,10 @@ class WebViewController: UIViewController, Animatable {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         guard self.keyword != nil else { return
             dismiss(animated: true, completion: nil)
         }
@@ -57,10 +61,6 @@ class WebViewController: UIViewController, Animatable {
         }
         let myURLRequest = URLRequest(url: myURL!)
         googleWebView.load(myURLRequest)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         let num = Int(arc4random() % 6)
         self.setFunc(animation.init(rawValue: num)!)
     }
