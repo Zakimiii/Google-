@@ -12,6 +12,7 @@ target 'google?' do
   pod 'SwiftLint',              '~> 0.25.0'
   pod 'R.swift',                '~> 4.0.0'
   pod 'SwiftDate',              '~> 4.0'
+  pod 'GCDWebServer',           '~> 3.0'
   
 
   # Pods for google?

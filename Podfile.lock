@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (4.7.3)
   - Eureka (4.1.1)
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -15,6 +18,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7.0)
   - Eureka (~> 4.1.1)
+  - GCDWebServer (~> 3.0)
   - R.swift (~> 4.0.0)
   - RxCocoa (~> 4.1.2)
   - RxSwift (~> 4.1.2)
@@ -26,6 +30,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
@@ -35,6 +40,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: f64ba8261b37e46eef193c46d20f94a36bab6f63
+PODFILE CHECKSUM: 35000f75382b2ce183b5543c7df54662539c354b
 
 COCOAPODS: 1.4.0

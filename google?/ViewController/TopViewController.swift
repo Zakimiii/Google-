@@ -25,11 +25,11 @@ class TopViewController: UIViewController {
         guard keyword != nil else {
             return
         }
-        self.performSegue(withIdentifier: "ToWebView", sender: nil)
+        self.performSegue(withIdentifier: R.segue.topViewController.toWebView.identifier, sender: nil)
     }
     
     override func  prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToWebView" {
+        if segue.identifier == R.segue.topViewController.toWebView.identifier {
             guard let webViewController = segue.destination as? WebViewController else {
                 return
             }
