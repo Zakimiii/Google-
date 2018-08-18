@@ -44,6 +44,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="googleImage" destination="gRt-qA-Xul" id="OxM-2I-QHS"/>
+                        <outlet property="googleTop" destination="76q-fs-JYE" id="Ymh-c7-xgU"/>
                         <outlet property="searchField" destination="tlx-TS-Eky" id="V1l-VG-AMU"/>
                         <outlet property="titleImageView" destination="3Wi-iw-alE" id="0KS-Hw-OHk"/>
                         <segue destination="Zbv-45-49c" kind="presentation" identifier="ToWebView" id="5af-xu-O2l"/>
@@ -90,7 +92,15 @@
                         <viewLayoutGuide key="safeArea" id="uyN-Y8-cOb"/>
                     </view>
                     <connections>
+                        <outlet property="footerBottom" destination="lO4-az-Tu1" id="qnZ-af-AGV"/>
+                        <outlet property="footerHeight" destination="pfx-v5-ePe" id="zF1-MN-54o"/>
+                        <outlet property="footerLeft" destination="HLw-WK-8ca" id="4i3-Hl-Si5"/>
+                        <outlet property="footerRight" destination="43L-H9-ey8" id="NjK-F3-ErV"/>
+                        <outlet property="footerbottom" destination="lO4-az-Tu1" id="x5R-ha-sb2"/>
                         <outlet property="googleWebView" destination="9eK-tt-tiQ" id="WPw-zd-gJY"/>
+                        <outlet property="webLeft" destination="iob-4Q-3o4" id="1QY-2u-ENZ"/>
+                        <outlet property="webRight" destination="N3o-dg-mrd" id="pV8-Dd-Ksx"/>
+                        <outlet property="webTop" destination="Db4-Rm-UwY" id="hr6-pw-spe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jd-d2-8J3" userLabel="First Responder" sceneMemberID="firstResponder"/>

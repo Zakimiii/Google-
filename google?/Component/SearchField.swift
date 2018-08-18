@@ -10,10 +10,12 @@ import UIKit
 
 protocol SearchFieldDelegate: class {
     func tappedSearchButton(_ searchBar:SearchField,  keyword: String?)
+    func shouldReturn(_ text: String?)
 }
 
 extension SearchFieldDelegate where Self: UIViewController {
-    func tappedSearchButton(keyword: String){}
+    func tappedSearchButton(_ searchBar: SearchField,keyword: String?){}
+    func shouldReturn(_ text: String?){}
 }
 
 @objcMembers
@@ -24,7 +26,11 @@ class SearchField: UIView {
             searchButton.addTarget(self, action: #selector(self.onTouchUpSearchButton), for: .touchUpInside)
         }
     }
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField: UITextField! {
+        didSet{
+            textField.delegate = self
+        }
+    }
     weak var delegate: SearchFieldDelegate!
     
     required init?(coder aDecoder: NSCoder) {
@@ -58,6 +64,26 @@ class SearchField: UIView {
     
     
     func onTouchUpSearchButton() {
+        guard self.textField.text != nil, self.textField.text != "" else {
+            return
+        }
        self.delegate?.tappedSearchButton(self,  keyword: self.textField.text)
+    }
+}
+extension SearchField: UITextFieldDelegate {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.delegate?.shouldReturn(textField.text)
+        return true
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+       self.delegate?.shouldReturn(textField.text)
+        return true
     }
 }
