@@ -33,22 +33,22 @@ class FooterView: UIView {
     @IBOutlet weak var nextButton: UIButton!{
         didSet{
             nextButton.transform = CGAffineTransform(scaleX: -1, y: 1)
-            backButton.addTarget(self, action: #selector(self.onNextButton), for: .touchUpInside)
+            nextButton.addTarget(self, action: #selector(self.onNextButton), for: .touchUpInside)
         }
     }
     @IBOutlet weak var shareButton: UIButton!{
         didSet{
-            backButton.addTarget(self, action: #selector(self.onShareButton), for: .touchUpInside)
+            shareButton.addTarget(self, action: #selector(self.onShareButton), for: .touchUpInside)
         }
     }
     @IBOutlet weak var plusButton: UIButton!{
         didSet{
-            backButton.addTarget(self, action: #selector(self.onPlusButton), for: .touchUpInside)
+            plusButton.addTarget(self, action: #selector(self.onPlusButton), for: .touchUpInside)
         }
     }
     @IBOutlet weak var newButton: UIButton!{
         didSet{
-            backButton.addTarget(self, action: #selector(self.onNewButton), for: .touchUpInside)
+            newButton.addTarget(self, action: #selector(self.onNewButton), for: .touchUpInside)
         }
     }
     var delegate: FooterViewDelegate!

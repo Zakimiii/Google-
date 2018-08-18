@@ -96,6 +96,7 @@
                         <outlet property="footerHeight" destination="pfx-v5-ePe" id="zF1-MN-54o"/>
                         <outlet property="footerLeft" destination="HLw-WK-8ca" id="4i3-Hl-Si5"/>
                         <outlet property="footerRight" destination="43L-H9-ey8" id="NjK-F3-ErV"/>
+                        <outlet property="footerView" destination="fes-k5-cMk" id="Npe-KE-iJq"/>
                         <outlet property="footerbottom" destination="lO4-az-Tu1" id="x5R-ha-sb2"/>
                         <outlet property="googleWebView" destination="9eK-tt-tiQ" id="WPw-zd-gJY"/>
                         <outlet property="webLeft" destination="iob-4Q-3o4" id="1QY-2u-ENZ"/>

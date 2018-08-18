@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/apple/projects/Google-/google?/Animation">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/projects/Google-/google?/AnimeTest.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/projects/Google-/google?/AnimeTestViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/projects/Google-/google?/Quiz.plist">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/projects/Google-/google?/QuizAlertManager.swift">
+   </FileRef>
+   <FileRef
       location = "group:google?.xcodeproj">
    </FileRef>
    <FileRef

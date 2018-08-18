@@ -9,7 +9,7 @@
 import UIKit
 
 @objcMembers
-class TopViewController: UIViewController {
+class TopViewController: UIViewController, Animatable {
 
     @IBOutlet weak var googleTop: NSLayoutConstraint!
     @IBOutlet weak var googleImage: NSLayoutConstraint!
@@ -34,7 +34,6 @@ class TopViewController: UIViewController {
     func moveComment(_ sender: Timer){
         let commentLabel = sender.userInfo as! UILabel
         commentLabel.frame.origin.x -= commentLabel.frame.height
-        
     }
     
     func makeCommentLabel() -> UILabel {

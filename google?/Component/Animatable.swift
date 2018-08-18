@@ -9,13 +9,14 @@
 import UIKit
 
 protocol Animatable {
-    func test(view: UIView, gain: CGFloat)
+    func updown(view: UIView, gain: CGFloat)
     func rotateRight(view: UIView, speed: TimeInterval)
     func rotateLeft(view: UIView, speed: TimeInterval)
+    func zoomIn(view: UIView, speed: TimeInterval)
 }
 
 extension Animatable {
-    func test(view: UIView, gain: CGFloat = 100.0) {
+    func updown(view: UIView, gain: CGFloat = 100.0) {
         UIView.animate(withDuration: 1.0, delay: 0.0, options: [.autoreverse, .repeat], animations: {
             view.center.y += gain
         }, completion: nil)
@@ -31,5 +32,11 @@ extension Animatable {
         UIView.animate(withDuration: speed, delay: 0.0, options: [.repeat, .curveLinear], animations: {
             view.transform = view.transform.rotated(by: CGFloat(-Float.pi))
         }, completion: nil)
+    }
+    
+    func zoomIn(view: UIView, speed: TimeInterval = 100.0) {
+        UIView.animate(withDuration: speed, delay: 0.0, options: [.repeat, .curveLinear], animations: {
+            view.frame = CGRect(x:10, y:10, width:10, height:10)
+        })
     }
 }
