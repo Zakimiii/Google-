@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Toaster
 
 @objcMembers
 class WebViewController: UIViewController, Animatable {
@@ -52,12 +53,16 @@ class WebViewController: UIViewController, Animatable {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guard self.keyword != nil else { return
+        guard self.keyword != nil else {
+            Toast(text: "日本語は受け付けません").show()
             dismiss(animated: true, completion: nil)
+            return
         }
         let myURL = URL(string: "https://www.google.co.jp/" + self.keyword)
-        guard myURL != nil else { return
+        guard myURL != nil else {
+            Toast(text: "日本語は受け付けません").show()
             dismiss(animated: true, completion: nil)
+            return
         }
         let myURLRequest = URLRequest(url: myURL!)
         googleWebView.load(myURLRequest)
@@ -129,8 +134,9 @@ extension WebViewController: FooterViewDelegate {
         let num = Int(arc4random() % 6)
         self.keyword = ["tech camp", "google", "one ok rock", "あああああ", "aiueo", "yes I am"][num]
         let myURL = URL(string: "https://www.google.co.jp/" + self.keyword)
-        guard myURL != nil else { return
+        guard myURL != nil else {
             dismiss(animated: true, completion: nil)
+            return
         }
         let myURLRequest = URLRequest(url: myURL!)
         googleWebView.load(myURLRequest)
@@ -140,8 +146,9 @@ extension WebViewController: FooterViewDelegate {
         let num = Int(arc4random() % 6)
         self.keyword = ["東京", "京都", "福岡", "bring me horizon", "you can do it", "らららら"][num]
         let myURL = URL(string: "https://www.google.co.jp/" + self.keyword)
-        guard myURL != nil else { return
+        guard myURL != nil else {
             dismiss(animated: true, completion: nil)
+            return
         }
         let myURLRequest = URLRequest(url: myURL!)
         googleWebView.load(myURLRequest)
