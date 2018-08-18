@@ -15,6 +15,18 @@
 		182784712127A28F00C5A150 /* google_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784702127A28F00C5A150 /* google_UITests.swift */; };
 		1827847F2127ABE300C5A150 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827847E2127ABE300C5A150 /* TopViewController.swift */; };
 		182784812127AC3D00C5A150 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784802127AC3D00C5A150 /* WebViewController.swift */; };
+		182784852127AE6000C5A150 /* searchField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182784842127AE6000C5A150 /* searchField.xib */; };
+		182784872127AE7700C5A150 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784862127AE7700C5A150 /* SearchField.swift */; };
+		182784D72127C48600C5A150 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182784D62127C48600C5A150 /* FooterView.xib */; };
+		182784D92127C49500C5A150 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784D82127C49400C5A150 /* FooterView.swift */; };
+		18632DFD2127ECA500C71EC0 /* Action 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632DF92127ECA500C71EC0 /* Action 1.png */; };
+		18632DFE2127ECA500C71EC0 /* Action 3-1@3xのコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632DFA2127ECA500C71EC0 /* Action 3-1@3xのコピー.png */; };
+		18632DFF2127ECA500C71EC0 /* forwardchevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632DFB2127ECA500C71EC0 /* forwardchevron.png */; };
+		18632E002127ECA500C71EC0 /* backchevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632DFC2127ECA500C71EC0 /* backchevron.png */; };
+		18632E022127EF3800C71EC0 /* google?.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632E012127EF3800C71EC0 /* google?.png */; };
+		18632E042127EFEE00C71EC0 /* a3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632E032127EFEE00C71EC0 /* a3.png */; };
+		18632E062127F0EF00C71EC0 /* Right Accessory.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632E052127F0EE00C71EC0 /* Right Accessory.png */; };
+		18632E082127F1C800C71EC0 /* icon-navigation-search-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 18632E072127F1C800C71EC0 /* icon-navigation-search-grey.png */; };
 		4B0C0E6E9B1EAD3ECB646797 /* Pods_google_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E8F38E7CB331EB772E4F96 /* Pods_google_UITests.framework */; };
 		76C5952711ECE793BD194113 /* Pods_google_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D862D1D52623A92FEFF7A6CE /* Pods_google_Tests.framework */; };
 		D2C39192A83A28E95469D239 /* Pods_google_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1220A312084CE4B528DDA6 /* Pods_google_.framework */; };
@@ -37,6 +49,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		182784D32127BC8300C5A150 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		08C3C9D937B4653B0A80640B /* Pods-google?UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google?UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-google?UITests/Pods-google?UITests.release.xcconfig"; sourceTree = "<group>"; };
 		1827844D2127A28C00C5A150 /* google?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "google?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +78,19 @@
 		182784722127A28F00C5A150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1827847E2127ABE300C5A150 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		182784802127AC3D00C5A150 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		182784842127AE6000C5A150 /* searchField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchField.xib; sourceTree = "<group>"; };
+		182784862127AE7700C5A150 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		182784CB2127BC7300C5A150 /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Rswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		182784D62127C48600C5A150 /* FooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		182784D82127C49400C5A150 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		18632DF92127ECA500C71EC0 /* Action 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Action 1.png"; path = "../../../../Creative Cloud Files/Action 1.png"; sourceTree = "<group>"; };
+		18632DFA2127ECA500C71EC0 /* Action 3-1@3xのコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Action 3-1@3xのコピー.png"; path = "../../../../Creative Cloud Files/Action 3-1@3xのコピー.png"; sourceTree = "<group>"; };
+		18632DFB2127ECA500C71EC0 /* forwardchevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forwardchevron.png; path = "../../../../Creative Cloud Files/forwardchevron.png"; sourceTree = "<group>"; };
+		18632DFC2127ECA500C71EC0 /* backchevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backchevron.png; path = "../../../../Creative Cloud Files/backchevron.png"; sourceTree = "<group>"; };
+		18632E012127EF3800C71EC0 /* google?.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "google?.png"; path = "../../../../Pictures/google?.png"; sourceTree = "<group>"; };
+		18632E032127EFEE00C71EC0 /* a3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a3.png; path = "../../../../Creative Cloud Files/a3.png"; sourceTree = "<group>"; };
+		18632E052127F0EE00C71EC0 /* Right Accessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Right Accessory.png"; path = "../../../../Creative Cloud Files/iOS 12 Adobe XD/UI Elements + Design Templates + Guides/Right Accessory.png"; sourceTree = "<group>"; };
+		18632E072127F1C800C71EC0 /* icon-navigation-search-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-navigation-search-grey.png"; path = "../../../../Downloads/FireShot/icon-navigation-search-grey.png"; sourceTree = "<group>"; };
 		460D9859731B7D09DFE95BB0 /* Pods-google?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google?.release.xcconfig"; path = "Pods/Target Support Files/Pods-google?/Pods-google?.release.xcconfig"; sourceTree = "<group>"; };
 		750FD8D1CEDDBB06BD93B7BA /* Pods-google?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google?Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google?Tests/Pods-google?Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C1220A312084CE4B528DDA6 /* Pods_google_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,13 +154,14 @@
 		1827844F2127A28C00C5A150 /* google? */ = {
 			isa = PBXGroup;
 			children = (
+				18632DF82127EC7500C71EC0 /* Images */,
+				182784832127AE2600C5A150 /* ViewController */,
+				182784822127AE0900C5A150 /* Component */,
 				182784502127A28C00C5A150 /* AppDelegate.swift */,
 				182784542127A28C00C5A150 /* Main.storyboard */,
 				182784572127A28E00C5A150 /* Assets.xcassets */,
 				182784592127A28E00C5A150 /* LaunchScreen.storyboard */,
 				1827845C2127A28F00C5A150 /* Info.plist */,
-				1827847E2127ABE300C5A150 /* TopViewController.swift */,
-				182784802127AC3D00C5A150 /* WebViewController.swift */,
 			);
 			path = "google?";
 			sourceTree = "<group>";
@@ -145,6 +184,41 @@
 			path = "google?UITests";
 			sourceTree = "<group>";
 		};
+		182784822127AE0900C5A150 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				182784842127AE6000C5A150 /* searchField.xib */,
+				182784862127AE7700C5A150 /* SearchField.swift */,
+				182784D62127C48600C5A150 /* FooterView.xib */,
+				182784D82127C49400C5A150 /* FooterView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		182784832127AE2600C5A150 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				182784802127AC3D00C5A150 /* WebViewController.swift */,
+				1827847E2127ABE300C5A150 /* TopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18632DF82127EC7500C71EC0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				18632E072127F1C800C71EC0 /* icon-navigation-search-grey.png */,
+				18632E052127F0EE00C71EC0 /* Right Accessory.png */,
+				18632E032127EFEE00C71EC0 /* a3.png */,
+				18632E012127EF3800C71EC0 /* google?.png */,
+				18632DF92127ECA500C71EC0 /* Action 1.png */,
+				18632DFA2127ECA500C71EC0 /* Action 3-1@3xのコピー.png */,
+				18632DFC2127ECA500C71EC0 /* backchevron.png */,
+				18632DFB2127ECA500C71EC0 /* forwardchevron.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		1E957BD2C15F18E230268177 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +235,7 @@
 		701407FD0C912BA405E8E800 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				182784CB2127BC7300C5A150 /* Rswift.framework */,
 				7C1220A312084CE4B528DDA6 /* Pods_google_.framework */,
 				D862D1D52623A92FEFF7A6CE /* Pods_google_Tests.framework */,
 				87E8F38E7CB331EB772E4F96 /* Pods_google_UITests.framework */,
@@ -176,11 +251,13 @@
 			buildConfigurationList = 182784752127A28F00C5A150 /* Build configuration list for PBXNativeTarget "google?" */;
 			buildPhases = (
 				8F3C3A950DA7E7154E179D03 /* [CP] Check Pods Manifest.lock */,
+				1827848A2127B56200C5A150 /* ShellScript */,
 				182784492127A28C00C5A150 /* Sources */,
 				1827844A2127A28C00C5A150 /* Frameworks */,
 				1827844B2127A28C00C5A150 /* Resources */,
 				8BA4AF18DF6AC9AACEC090BB /* [CP] Embed Pods Frameworks */,
 				1564F02E6E1C0D00B1DA18B0 /* [CP] Copy Pods Resources */,
+				182784D32127BC8300C5A150 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,9 +358,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18632E062127F0EF00C71EC0 /* Right Accessory.png in Resources */,
+				18632E022127EF3800C71EC0 /* google?.png in Resources */,
+				18632E042127EFEE00C71EC0 /* a3.png in Resources */,
 				1827845B2127A28E00C5A150 /* LaunchScreen.storyboard in Resources */,
 				182784582127A28E00C5A150 /* Assets.xcassets in Resources */,
+				18632DFD2127ECA500C71EC0 /* Action 1.png in Resources */,
+				18632E002127ECA500C71EC0 /* backchevron.png in Resources */,
+				182784852127AE6000C5A150 /* searchField.xib in Resources */,
+				18632DFE2127ECA500C71EC0 /* Action 3-1@3xのコピー.png in Resources */,
+				18632DFF2127ECA500C71EC0 /* forwardchevron.png in Resources */,
+				182784D72127C48600C5A150 /* FooterView.xib in Resources */,
 				182784562127A28C00C5A150 /* Main.storyboard in Resources */,
+				18632E082127F1C800C71EC0 /* icon-navigation-search-grey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +405,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google?/Pods-google?-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1827848A2127B56200C5A150 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
 		};
 		2611D5ACCB8CADCAF72C9424 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -376,7 +477,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-google?/Pods-google?-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -387,7 +488,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -474,6 +575,8 @@
 			files = (
 				1827847F2127ABE300C5A150 /* TopViewController.swift in Sources */,
 				182784812127AC3D00C5A150 /* WebViewController.swift in Sources */,
+				182784D92127C49500C5A150 /* FooterView.swift in Sources */,
+				182784872127AE7700C5A150 /* SearchField.swift in Sources */,
 				182784512127A28C00C5A150 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,6 +750,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4D819F8887170F8B5256CD6 /* Pods-google?.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8PBK2LRFA;
@@ -666,6 +770,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 460D9859731B7D09DFE95BB0 /* Pods-google?.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8PBK2LRFA;
