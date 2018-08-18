@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rjA-8e-lUA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anime Test View Controller-->
+        <scene sceneID="dwV-xy-5av">
+            <objects>
+                <viewController id="rjA-8e-lUA" customClass="AnimeTestViewController" customModule="google_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2AY-qE-QEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klp-HQ-vDJ">
+                                <rect key="frame" x="59.5" y="205.5" width="256" height="256"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="Gj5-aA-gkf"/>
+                                    <constraint firstAttribute="width" constant="256" id="sh9-5e-11a"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="klp-HQ-vDJ" firstAttribute="centerY" secondItem="2AY-qE-QEX" secondAttribute="centerY" id="G8f-Nr-P9B"/>
+                            <constraint firstItem="klp-HQ-vDJ" firstAttribute="centerX" secondItem="2AY-qE-QEX" secondAttribute="centerX" id="euO-J9-BGw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8n8-fl-NjG"/>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="klp-HQ-vDJ" id="JlV-MS-lZd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAS-xG-HVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429.60000000000002" y="338.68065967016497"/>
+        </scene>
+    </scenes>
+</document>
