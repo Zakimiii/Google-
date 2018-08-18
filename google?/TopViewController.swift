@@ -12,8 +12,11 @@ class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        QuizAlertManager.sharedInstance.show(viewController: self)
     }
 
     override func didReceiveMemoryWarning() {

@@ -20,8 +20,8 @@ class QuizAlertManager {
         }
     }
     
-    func show(viewController: UIViewController) {
-        if arc4random_uniform(10) < 5 {
+    func show(viewController: UIViewController, force: Bool = false, title: String = "突然ですがここで問題です！") {
+        if arc4random_uniform(10) < 5 && !force {
             return
         }
         
@@ -35,7 +35,7 @@ class QuizAlertManager {
             })
         }
 
-        let alert: UIAlertController = UIAlertController(title: "突然ですがここで問題です！", message: quiz, preferredStyle: .alert)
+        let alert: UIAlertController = UIAlertController(title: title, message: quiz, preferredStyle: .alert)
         actions.forEach { (action) in
             alert.addAction(action)
         }
@@ -59,6 +59,9 @@ class QuizAlertManager {
         
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: .default, handler:{
             (action: UIAlertAction!) -> Void in
+            QuizAlertManager.sharedInstance.show(viewController: viewController,
+                                                 force: true,
+                                                 title: "間違えたのでもう一問！")
         })
         
         alert.addAction(defaultAction)
