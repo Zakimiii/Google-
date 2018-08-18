@@ -10,7 +10,7 @@ target 'google?' do
   pod 'RxCocoa',                '~> 4.1.2'
   pod 'SwiftyJSON',             '~> 4.0.0'
   pod 'SwiftLint',              '~> 0.25.0'
-  pod 'R.swift',                '~> 4.0.0'
+#  pod 'R.swift',                '~> 4.0.0'
   pod 'SwiftDate',              '~> 4.0'
   pod 'GCDWebServer',           '~> 3.0'
   

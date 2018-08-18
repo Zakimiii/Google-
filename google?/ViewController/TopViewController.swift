@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Rswift
 
 class TopViewController: UIViewController {
 
@@ -25,11 +24,11 @@ class TopViewController: UIViewController {
         guard keyword != nil else {
             return
         }
-        self.performSegue(withIdentifier: R.segue.topViewController.toWebView.identifier, sender: nil)
+        self.performSegue(withIdentifier:"ToWebView", sender: nil)
     }
     
     override func  prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == R.segue.topViewController.toWebView.identifier {
+        if segue.identifier == "ToWebView" {
             guard let webViewController = segue.destination as? WebViewController else {
                 return
             }

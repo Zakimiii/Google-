@@ -17,14 +17,8 @@
 		182784812127AC3D00C5A150 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784802127AC3D00C5A150 /* WebViewController.swift */; };
 		182784852127AE6000C5A150 /* searchField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182784842127AE6000C5A150 /* searchField.xib */; };
 		182784872127AE7700C5A150 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784862127AE7700C5A150 /* SearchField.swift */; };
-		182784D52127C3B200C5A150 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784D42127C3B200C5A150 /* R.generated.swift */; };
 		182784D72127C48600C5A150 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182784D62127C48600C5A150 /* FooterView.xib */; };
 		182784D92127C49500C5A150 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182784D82127C49400C5A150 /* FooterView.swift */; };
-		182784DC2127C61500C5A150 /* Action 3-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182784DA2127C61500C5A150 /* Action 3-1@2x.png */; };
-		182784DD2127C61500C5A150 /* Chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 182784DB2127C61500C5A150 /* Chevron.png */; };
-		182784E12127C68D00C5A150 /* Action 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 182784DE2127C68D00C5A150 /* Action 2.png */; };
-		182784E22127C68D00C5A150 /* Action 3-1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182784DF2127C68D00C5A150 /* Action 3-1@3x.png */; };
-		182784E32127C68D00C5A150 /* Action 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 182784E02127C68D00C5A150 /* Action 1.png */; };
 		4B0C0E6E9B1EAD3ECB646797 /* Pods_google_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E8F38E7CB331EB772E4F96 /* Pods_google_UITests.framework */; };
 		76C5952711ECE793BD194113 /* Pods_google_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D862D1D52623A92FEFF7A6CE /* Pods_google_Tests.framework */; };
 		D2C39192A83A28E95469D239 /* Pods_google_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1220A312084CE4B528DDA6 /* Pods_google_.framework */; };
@@ -79,14 +73,8 @@
 		182784842127AE6000C5A150 /* searchField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchField.xib; sourceTree = "<group>"; };
 		182784862127AE7700C5A150 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		182784CB2127BC7300C5A150 /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Rswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		182784D42127C3B200C5A150 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		182784D62127C48600C5A150 /* FooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
 		182784D82127C49400C5A150 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
-		182784DA2127C61500C5A150 /* Action 3-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Action 3-1@2x.png"; path = "../../../../Creative Cloud Files/iOS 12 Adobe XD/UI Elements + Design Templates + Guides/Action 3-1@2x.png"; sourceTree = "<group>"; };
-		182784DB2127C61500C5A150 /* Chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chevron.png; path = "../../../../Creative Cloud Files/iOS 12 Adobe XD/UI Elements + Design Templates + Guides/Chevron.png"; sourceTree = "<group>"; };
-		182784DE2127C68D00C5A150 /* Action 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Action 2.png"; path = "../../../../Creative Cloud Files/iOS 12 Adobe XD/UI Elements + Design Templates + Guides/Action 2.png"; sourceTree = "<group>"; };
-		182784DF2127C68D00C5A150 /* Action 3-1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Action 3-1@3x.png"; path = "../../../../Creative Cloud Files/iOS 12 Adobe XD/UI Elements + Design Templates + Guides/Action 3-1@3x.png"; sourceTree = "<group>"; };
-		182784E02127C68D00C5A150 /* Action 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Action 1.png"; path = "../../../../Creative Cloud Files/iOS 12 Adobe XD/UI Elements + Design Templates + Guides/Action 1.png"; sourceTree = "<group>"; };
 		460D9859731B7D09DFE95BB0 /* Pods-google?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google?.release.xcconfig"; path = "Pods/Target Support Files/Pods-google?/Pods-google?.release.xcconfig"; sourceTree = "<group>"; };
 		750FD8D1CEDDBB06BD93B7BA /* Pods-google?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google?Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google?Tests/Pods-google?Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C1220A312084CE4B528DDA6 /* Pods_google_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +116,6 @@
 		182784442127A28C00C5A150 = {
 			isa = PBXGroup;
 			children = (
-				182784D42127C3B200C5A150 /* R.generated.swift */,
 				1827844F2127A28C00C5A150 /* google? */,
 				182784642127A28F00C5A150 /* google?Tests */,
 				1827846F2127A28F00C5A150 /* google?UITests */,
@@ -186,11 +173,6 @@
 				182784842127AE6000C5A150 /* searchField.xib */,
 				182784862127AE7700C5A150 /* SearchField.swift */,
 				182784D62127C48600C5A150 /* FooterView.xib */,
-				182784E02127C68D00C5A150 /* Action 1.png */,
-				182784DE2127C68D00C5A150 /* Action 2.png */,
-				182784DF2127C68D00C5A150 /* Action 3-1@3x.png */,
-				182784DA2127C61500C5A150 /* Action 3-1@2x.png */,
-				182784DB2127C61500C5A150 /* Chevron.png */,
 				182784D82127C49400C5A150 /* FooterView.swift */,
 			);
 			path = Component;
@@ -345,15 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1827845B2127A28E00C5A150 /* LaunchScreen.storyboard in Resources */,
-				182784DD2127C61500C5A150 /* Chevron.png in Resources */,
-				182784E32127C68D00C5A150 /* Action 1.png in Resources */,
 				182784582127A28E00C5A150 /* Assets.xcassets in Resources */,
-				182784E22127C68D00C5A150 /* Action 3-1@3x.png in Resources */,
 				182784852127AE6000C5A150 /* searchField.xib in Resources */,
-				182784DC2127C61500C5A150 /* Action 3-1@2x.png in Resources */,
 				182784D72127C48600C5A150 /* FooterView.xib in Resources */,
 				182784562127A28C00C5A150 /* Main.storyboard in Resources */,
-				182784E12127C68D00C5A150 /* Action 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +377,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+			shellScript = "
+";
 		};
 		2611D5ACCB8CADCAF72C9424 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -460,7 +438,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -472,7 +449,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -559,7 +535,6 @@
 			files = (
 				1827847F2127ABE300C5A150 /* TopViewController.swift in Sources */,
 				182784812127AC3D00C5A150 /* WebViewController.swift in Sources */,
-				182784D52127C3B200C5A150 /* R.generated.swift in Sources */,
 				182784D92127C49500C5A150 /* FooterView.swift in Sources */,
 				182784872127AE7700C5A150 /* SearchField.swift in Sources */,
 				182784512127A28C00C5A150 /* AppDelegate.swift in Sources */,
