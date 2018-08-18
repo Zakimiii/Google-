@@ -22,13 +22,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XK-5S-86h">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XK-5S-86h">
                     <rect key="frame" x="325" y="0.0" width="50" height="50"/>
-                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.35717550860808356" green="0.49592242870885495" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="4XK-5S-86h" secondAttribute="height" multiplier="1:1" id="UML-8S-Gdt"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <inset key="imageEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                    <state key="normal" image="icon-navigation-search-grey.png"/>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6b-I5-fT8">
                     <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
@@ -52,4 +53,7 @@
             <point key="canvasLocation" x="49.5" y="54"/>
         </view>
     </objects>
+    <resources>
+        <image name="icon-navigation-search-grey.png" width="975" height="975"/>
+    </resources>
 </document>

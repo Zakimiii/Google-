@@ -24,14 +24,7 @@ class SearchField: UIView {
             searchButton.addTarget(self, action: #selector(self.onTouchUpSearchButton), for: .touchUpInside)
         }
     }
-    @IBOutlet weak var textField: UITextField! {
-        didSet {
-            textField.layer.borderWidth = 1
-            textField.layer.cornerRadius = 5
-            textField.layer.borderColor = UIColor(red: 0.44, green: 0.44, blue: 0.44, alpha: 1.0).cgColor
-            textField.layer.masksToBounds = true
-        }
-    }
+    @IBOutlet weak var textField: UITextField!
     weak var delegate: SearchFieldDelegate!
     
     required init?(coder aDecoder: NSCoder) {
@@ -55,6 +48,12 @@ class SearchField: UIView {
         view.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        view.layer.borderWidth = 1
+        view.layer.cornerRadius = 5
+        view.layer.borderColor = UIColor(red: 0.44, green: 0.44, blue: 0.44, alpha: 1.0).cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 2)
+        view.layer.shadowColor = UIColor(red: 0.54, green: 0.62, blue: 1.00, alpha: 0.50).cgColor
+        view.layer.masksToBounds = true
     }
     
     
