@@ -58,13 +58,12 @@ class WebViewController: UIViewController, Animatable {
             dismiss(animated: true, completion: nil)
             return
         }
-        let myURL = URL(string: "https://www.google.co.jp/" + self.keyword)
-        guard myURL != nil else {
+        guard let myURL = URL(string: ("https://www.google.co.jp/" + self.keyword).addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!) else {
             Toast(text: "日本語は受け付けません").show()
             dismiss(animated: true, completion: nil)
             return
         }
-        let myURLRequest = URLRequest(url: myURL!)
+        let myURLRequest = URLRequest(url: myURL)
         googleWebView.load(myURLRequest)
         let num = Int(arc4random() % 6)
         self.setFunc(animation.init(rawValue: num)!)
@@ -133,24 +132,22 @@ extension WebViewController: FooterViewDelegate {
     func tappedNew() {
         let num = Int(arc4random() % 6)
         self.keyword = ["tech camp", "google", "one ok rock", "あああああ", "aiueo", "yes I am"][num]
-        let myURL = URL(string: "https://www.google.co.jp/" + self.keyword)
-        guard myURL != nil else {
+        guard let myURL = URL(string: ("https://www.google.co.jp/" + self.keyword).addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!) else {
             dismiss(animated: true, completion: nil)
             return
         }
-        let myURLRequest = URLRequest(url: myURL!)
+        let myURLRequest = URLRequest(url: myURL)
         googleWebView.load(myURLRequest)
     }
     
     func tappedPlus() {
         let num = Int(arc4random() % 6)
         self.keyword = ["東京", "京都", "福岡", "bring me horizon", "you can do it", "らららら"][num]
-        let myURL = URL(string: "https://www.google.co.jp/" + self.keyword)
-        guard myURL != nil else {
+        guard let myURL = URL(string: ("https://www.google.co.jp/" + self.keyword).addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!) else {
             dismiss(animated: true, completion: nil)
             return
         }
-        let myURLRequest = URLRequest(url: myURL!)
+        let myURLRequest = URLRequest(url: myURL)
         googleWebView.load(myURLRequest)
     }
     
