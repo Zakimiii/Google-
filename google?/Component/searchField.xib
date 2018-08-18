@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchField" customModule="google_" customModuleProvider="target">
+            <connections>
+                <outlet property="searchButton" destination="4XK-5S-86h" id="O9Q-ff-kDz"/>
+                <outlet property="textField" destination="i6b-I5-fT8" id="0FU-ul-qBl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XK-5S-86h">
+                    <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4XK-5S-86h" secondAttribute="height" multiplier="1:1" id="UML-8S-Gdt"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6b-I5-fT8">
+                    <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i6b-I5-fT8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="S6d-Mw-c1u"/>
+                <constraint firstItem="4XK-5S-86h" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="XI0-F3-SJT"/>
+                <constraint firstItem="4XK-5S-86h" firstAttribute="leading" secondItem="i6b-I5-fT8" secondAttribute="trailing" id="XSV-Nt-skQ"/>
+                <constraint firstItem="4XK-5S-86h" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ccS-rg-K4G"/>
+                <constraint firstItem="i6b-I5-fT8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="j8v-RL-ogv"/>
+                <constraint firstItem="4XK-5S-86h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pN6-Zp-Xgr"/>
+                <constraint firstItem="i6b-I5-fT8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sfr-zd-Eqe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="49.5" y="54"/>
+        </view>
+    </objects>
+</document>

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,13 +18,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Wi-iw-alE">
+                                <rect key="frame" x="30" y="80" width="315" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Wi-iw-alE" secondAttribute="height" multiplier="315:128" id="CCk-83-bkI"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlx-TS-Eky" customClass="SearchField" customModule="google_" customModuleProvider="target">
+                                <rect key="frame" x="10" y="238" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nGn-z4-ORo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Wi-iw-alE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="76q-fs-JYE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Wi-iw-alE" secondAttribute="trailing" constant="30" id="EAZ-5l-eZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tlx-TS-Eky" secondAttribute="trailing" constant="10" id="NY4-MQ-Mla"/>
+                            <constraint firstItem="3Wi-iw-alE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gRt-qA-Xul"/>
+                            <constraint firstItem="tlx-TS-Eky" firstAttribute="top" secondItem="3Wi-iw-alE" secondAttribute="bottom" constant="30" id="wrT-3w-55c"/>
+                            <constraint firstItem="tlx-TS-Eky" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ymf-SO-lRI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="searchField" destination="tlx-TS-Eky" id="V1l-VG-AMU"/>
+                        <outlet property="titleImageView" destination="3Wi-iw-alE" id="0KS-Hw-OHk"/>
+                        <segue destination="Zbv-45-49c" kind="presentation" identifier="ToWebView" id="5af-xu-O2l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="134"/>
+            <point key="canvasLocation" x="-12" y="133.5832083958021"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="XZv-y1-j6Q">
@@ -33,9 +61,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9eK-tt-tiQ">
-                                <rect key="frame" x="67" y="0.0" width="240" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eK-tt-tiQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -44,8 +71,17 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9eK-tt-tiQ" firstAttribute="top" secondItem="y7E-5V-wQ1" secondAttribute="top" id="8eY-9q-cXo"/>
+                            <constraint firstItem="9eK-tt-tiQ" firstAttribute="leading" secondItem="uyN-Y8-cOb" secondAttribute="leading" id="E7e-Nj-TMx"/>
+                            <constraint firstItem="9eK-tt-tiQ" firstAttribute="bottom" secondItem="uyN-Y8-cOb" secondAttribute="bottom" id="Taq-QE-WYO"/>
+                            <constraint firstItem="9eK-tt-tiQ" firstAttribute="trailing" secondItem="uyN-Y8-cOb" secondAttribute="trailing" id="idt-IM-2ai"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uyN-Y8-cOb"/>
                     </view>
+                    <connections>
+                        <outlet property="googleWebView" destination="9eK-tt-tiQ" id="WPw-zd-gJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jd-d2-8J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
